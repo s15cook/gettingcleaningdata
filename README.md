@@ -27,3 +27,20 @@ An R script called run_analysis.R has been created that does the following:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. Creates an independent tidy data set with the average of each variable for each activity and each subject.
+
+## Details of script
+The datafiles are downloaded and unzipped.
+
+The following data tables are created and merged into one file:
+- Test_X.txt
+- Test_y.txt
+- Subject_test.txt
+- Train_X.txt
+- Train_y.txt
+- Subject_train.txt
+
+The variables are labelled with the names from the features.txt file. The mean and standard deviation are extracted from the 
+merged data set (i.e. where the labels contain "mean" and "std"). A new column is added to include the activity description. 
+The variable names are cleansed and relabelled to a more appropriate name for ease of further analysis.
+
+A final tidy data set is created where the 79 numeric variables are averaged for each activity(Activity) and each subject (SubjectId).
