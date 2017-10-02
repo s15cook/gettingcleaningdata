@@ -83,16 +83,6 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 and the read.txt files sourced from the dataset.zip file link at the top of the document
 
 ## Tidy data details
-Test and training data (test_X.txt, test_y.txt, train_X.txt, train_y.txt, subject ids (subject_test.txt, subject_train.txt)
-and activity ids were merged to obtain a single data set. 
-
-Variables are labelled from the features.txt file.
-
-The mean and standard deviation variables are extracted from the merged dataset (i.e. labels that contained "mean" and "std"
-
-A new column was created to add the activity lables from the activity_label.txt file
-
-Data labels were renamed to a more approporpiate label.
 
 A tidy data set was created that are averaged for each activity and subject.
 SubjectId: Subject identifier for the experiment: 1:30
