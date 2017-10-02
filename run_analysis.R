@@ -8,6 +8,7 @@
 ## 5. From the data set in step 4, create a second, independent tidy data set 
 ##    with the average of each variable for each activity and each subject.
 
+library(plyr)
 ## Extract data from URL and unzip
 setwd("./data")
 if(!file.exists("./data")) {dir.create("./data")}
@@ -59,7 +60,6 @@ names(extract_mean_std) <- gsub('-std()',".StandardDeviation",names(extract_mean
 names(extract_mean_std) <- gsub('-meanFreq()',".MeanFrequency.",names(extract_mean_std))
 names(extract_mean_std) <- gsub('Freq$',"Frequency",names(extract_mean_std))
 names(extract_mean_std) <- gsub('\\(|\\)',"",names(extract_mean_std))
-##names(extract_mean_std) <- gsub('()',"",names(extract_mean_std))
 
 
 ## Create independent tidy data set with average of each variable for each activity and subject
